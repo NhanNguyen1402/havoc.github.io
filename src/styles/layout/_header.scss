@@ -1,0 +1,39 @@
+@import '../abstracts/variables';
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    background: $light-gray;
+    &__logo{
+        padding-left: 1rem;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    a {
+        color: $black;
+    }
+    .ant-anchor{
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+      }
+    .ant-anchor-ink {
+        display: none;
+      }
+      
+  } 
+
+  .mobileVisible {
+    display: none;
+  }
+  
+  .mobileHidden {
+    display: block;
+  }
+
+  
+

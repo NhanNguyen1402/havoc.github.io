@@ -1,0 +1,35 @@
+@import './abstracts/variables';
+@import './base/global';
+@import './base/reset';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/feature';
+@import './layout/work';
+@import './layout/contact';
+@import './layout/pricing';
+@import './layout/contact';
+@import './layout/footer';
+
+
+// reponsive
+
+@media only screen and (max-width: 991px) {
+    .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+      transform: scale(1.14);
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+      transform: scale(1);
+    }
+  
+    .mobileVisible {
+      display: block;
+    }
+    
+    .mobileHidden {
+      display: none;
+    }
+  }

@@ -1,0 +1,44 @@
+
+
+.hero {
+    background: url('/src/images/bg-hero.jpg') no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    height: 100vh;
+    .container-fluid {
+      display: block !important;
+    }
+    .ant-carousel,
+    .ant-carousel div {
+    height: 100%;
+    }
+    .slick-dots li button {
+      background: #000 !important;
+    }
+    .slick-dots li.slick-active button {
+      background: #1890ff !important;
+    }
+    &__content {
+      max-width: 640px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px 0 0 0;
+      h3 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin: 0 0 30px;
+      }
+      p {
+        margin: 0 0 30px;
+      }
+    }
+    &--btnHolder {
+      height: auto !important;
+      .button,
+      .fas {
+          margin: 0 10px 0 0;
+        }
+    }
+  }
+  

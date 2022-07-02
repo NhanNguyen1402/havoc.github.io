@@ -1,0 +1,274 @@
+body {
+  background: #f7f7f7;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.block {
+  padding: 60px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 20px;
+  margin: 0 0 40px;
+}
+
+.titleHolder:after {
+  transform: translateX(-50%);
+  content: "";
+  background: #1890ff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 50px;
+}
+
+.titleHolder h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  background: #f7f7f7;
+}
+.header__logo {
+  padding-left: 1rem;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.header a {
+  color: #000000;
+}
+.header .ant-anchor {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+.header .ant-anchor-ink {
+  display: none;
+}
+
+.mobileVisible {
+  display: none;
+}
+
+.mobileHidden {
+  display: block;
+}
+
+.hero {
+  background: url("/src/images/bg-hero.jpg") no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  height: 100vh;
+}
+.hero .container-fluid {
+  display: block !important;
+}
+.hero .ant-carousel,
+.hero .ant-carousel div {
+  height: 100%;
+}
+.hero .slick-dots li button {
+  background: #000 !important;
+}
+.hero .slick-dots li.slick-active button {
+  background: #1890ff !important;
+}
+.hero__content {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0 0 0;
+}
+.hero__content h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 30px;
+}
+.hero__content p {
+  margin: 0 0 30px;
+}
+.hero--btnHolder {
+  height: auto !important;
+}
+.hero--btnHolder .button,
+.hero--btnHolder .fas {
+  margin: 0 10px 0 0;
+}
+
+.about .contentHolder {
+  text-align: center;
+  margin: 0 0 50px;
+}
+.about .icon {
+  font-size: 40px;
+  color: #1890ff;
+  margin: 0 0 10px;
+}
+.about .content {
+  text-align: center;
+}
+
+.works {
+  background: url("../images/bg-works.jpg") no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
+.works h2 {
+  color: #fff;
+}
+.works .contentHolder {
+  text-align: center;
+}
+.works .contentHolder button {
+  font-size: 40px;
+  line-height: 1;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+}
+.works:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact .ant-form {
+  max-width: 640px;
+  margin: auto;
+}
+.contact .ant-form textarea {
+  min-height: 120px;
+  height: 120px;
+}
+
+.pricing .ant-list {
+  text-align: center;
+}
+.pricing .ant-row > div:nth-child(2) .ant-list-item {
+  box-shadow: 0 0 12px 2px #f3f3f3;
+  transform: scale(1.1);
+  position: relative;
+  z-index: 1;
+}
+.pricing .ant-card-head-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+}
+.pricing .large {
+  font-size: 38px;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+.pricing .fab {
+  margin: 0 10px 0 0;
+}
+
+.contact .ant-form {
+  max-width: 640px;
+  margin: auto;
+}
+.contact .ant-form textarea {
+  min-height: 120px;
+  height: 120px;
+}
+
+.footer {
+  background-color: #000000;
+}
+.footer__logo {
+  color: #f7f7f7;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: auto 50px;
+}
+.footer__socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 24px;
+}
+.footer__socials li {
+  margin: 0 20px;
+}
+.footer__socials a {
+  color: #f7f7f7;
+}
+.footer__copyright {
+  color: #f7f7f7;
+  text-align: center;
+}
+.footer--goTop {
+  color: #1890ff;
+}
+.footer--goTop:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 991px) {
+  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1.14);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1);
+  }
+
+  .mobileVisible {
+    display: block;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
